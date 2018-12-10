@@ -8,8 +8,11 @@ var search = ["Breach", "Ocean", "Waves", "Tropical", "Sunset", "Sunrise", "Surf
 // Function that displays all gif buttons
 
 function displayGifButtons(){
-    $("#gifButtonsView").empty(); // erasing anything in this div id so that it doesnt duplicate the results
-    for (var i = 0; i < actions.length; i++){
+
+    // erasing anything in this div id so that it doesnt duplicate the results
+    $("#gifButtonsView").empty(); 
+    
+    for (var i = 0; i < search.length; i++){
         var gifButton = $("<button>");
         gifButton.addClass("action");
         gifButton.addClass("btn btn-primary")
