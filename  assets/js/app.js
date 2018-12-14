@@ -2,7 +2,7 @@ $( document ).ready(function() {
 
 // An array of actions, new actions will be pushed into this array;
 
-var search = ["Breach", "Ocean", "Waves", "Tropical", "Sunset", "Sunrise", "Surfing", "Water sports", "Boat", "Dinner Cruise", "Islands"];
+var search = ["Beach", "Ocean", "Waves", "Tropical", "Sunset", "Sunrise", "Surfing", "Water sports", "Boat", "Dinner Cruise", "Hawaii"];
 
 // Creating Functions & Methods
 // Function that displays all gif buttons
@@ -25,13 +25,15 @@ function displayGifButtons(){
 // Function to add a new action button
 
 function addNewButton(){
-    $("#addGif").on("click", function(){
-    var action = $("#searchInput").val().trim();
+    $("#addGif").on("click", function(event){
+    event.preventDefault();
+
+    var action = $("#action-input").val().trim();
     if (action == ""){
       return false; // added so user cannot add a blank button
     }
     search.push(action);
-
+    console.log("addNewButtom");
     displayGifButtons();
     return false;
     });

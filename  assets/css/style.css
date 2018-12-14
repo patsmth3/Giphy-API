@@ -1,6 +1,7 @@
 body{
 	background: url("../images/Tropical-Resort.jpg");
     background-repeat: no-repeat;
+    height: fit-content;
 }
 * {
 	box-sizing: border-box;
