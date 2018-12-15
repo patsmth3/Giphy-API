@@ -36,3 +36,6 @@ img {
 .jumbotron .h1, .jumbotron h1 {
     text-align: center;
 }
+.mainDiv {
+    overflow: scroll;
+}

@@ -54,6 +54,7 @@ function removeLastButton(){
 // Function that displays all of the gifs
 
 function displayGifs(){
+    $(".mainDiv").height("600px");
     var action = $(this).attr("data-name");
     var queryURL = "http://api.giphy.com/v1/gifs/search?q=" + action + "&api_key=XZhFy19bjIhvWzZqPK8nTrHOrwiSBNSi";
 
